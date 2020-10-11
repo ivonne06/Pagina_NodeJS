@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Taller 2 - DAW</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/taller2.css" />
+  </head>
+  <body>
+    <h1>Dinos lo que piensas</h1>
+    <form name="form" class="formulario" id="formulario">
+      <!-- Grupo: Dui -->
+      <div class="formulario__grupo" id="grupo__dui">
+        <label for="dui" class="formulario__label">DUI</label>
+        <div class="formulario__grupo-input">
+          <input
+            type="text"
+            class="formulario__input"
+            name="dui"
+            id="dui"
+            placeholder="00000000-0"
+          />
+          <i class="formulario__validacion-estado fas fa-times-circle"></i>
+        </div>
+        <p class="formulario__input-error">
+          El DUI tiene que ser de 8 dígitos, un guion y un ultimo digito.
+        </p>
+      </div>
+
+      <!-- Grupo: Nit -->
+      <div class="formulario__grupo" id="grupo__nit">
+        <label for="nit" class="formulario__label">NIT</label>
+        <div class="formulario__grupo-input">
+          <input
+            type="text"
+            class="formulario__input"
+            name="nit"
+            id="nit"
+            placeholder="9999-999999-999-9"
+          />
+          <i class="formulario__validacion-estado fas fa-times-circle"></i>
+        </div>
+        <p class="formulario__input-error">
+          El Nit solo puede números y guiones, debe cumplir el siguiente formato
+          9999-999999-999-9.
+        </p>
+      </div>
+
+      <!-- Grupo: Correo Electronico -->
+      <div class="formulario__grupo" id="grupo__correo">
+        <label for="correo" class="formulario__label">Correo Electrónico</label>
+        <div class="formulario__grupo-input">
+          <input
+            type="email"
+            class="formulario__input"
+            name="correo"
+            id="correo"
+            placeholder="putin@gmail.com"
+          />
+          <i class="formulario__validacion-estado fas fa-times-circle"></i>
+        </div>
+        <p class="formulario__input-error">
+          El correo solo puede contener letras, numeros, puntos, guiones y guion
+          bajo.
+        </p>
+      </div>
+
+      <!-- Grupo: Teléfono -->
+      <div class="formulario__grupo" id="grupo__telefono">
+        <label for="telefono" class="formulario__label">Teléfono</label>
+        <div class="formulario__grupo-input">
+          <input
+            type="text"
+            class="formulario__input"
+            name="telefono"
+            id="telefono"
+            placeholder="7000-0000"
+          />
+          <i class="formulario__validacion-estado fas fa-times-circle"></i>
+        </div>
+        <p class="formulario__input-error">
+          El telefono puede contener solo números o números con un guion (el
+          maximo son 8 dígitos)
+        </p>
+      </div>
+
+      <!-- Grupo: Mensaje -->
+      <div
+        class="formulario__grupo formulario__grupo-sugerencia"
+        id="grupo__sugerencia"
+      >
+        <label for="sugerencia" class="formulario__label"
+          >Ingresa tu sugerencia</label
+        >
+        <div class="formulario__grupo-input">
+          <textarea
+            class="formulario__input"
+            name="text"
+            placeholder="Escribe aquí..."
+            id="sugerencia"
+          ></textarea>
+          <i class="formulario__validacion-estado fas fa-times-circle"></i>
+        </div>
+        <p class="formulario__input-error">El campo no puede quedar vacio</p>
+      </div>
+
+      <div class="formulario__mensaje" id="formulario__mensaje1">
+        <p>
+          <i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor
+          rellena el formulario correctamente.
+        </p>
+      </div>
+      <div class="formulario__mensaje" id="formulario__mensaje2">
+        <p>
+          <i class="fas fa-exclamation-triangle"></i> <b>Error:</b> El DUI o NIT
+          ya esta registrado, intente otra vez.
+        </p>
+      </div>
+
+      <div class="formulario__grupo formulario__grupo-btn-enviar">
+        <button type="submit" class="formulario__btn" id="btnGuardar">
+          Enviar
+        </button>
+        <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">
+          Formulario enviado exitosamente!
+        </p>
+      </div>
+   <script src="js/taller2.js"></script>
+    <script
+      src="https://kit.fontawesome.com/2c36e9b7b1.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
